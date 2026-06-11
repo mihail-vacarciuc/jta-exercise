@@ -73,7 +73,7 @@ then:
 pip install -r requirements.txt
 ```
 
-### 3. Frontend (install)
+### 4. Frontend (install)
 ```bash
 cd frontend
 npm install
