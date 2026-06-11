@@ -21,9 +21,10 @@ Displays users and products analytics from [DummyJSON](https://dummyjson.com).
 
 ## Prerequisites
 
-- Python 3.10+
-- Node.js 18+
+- Python 
+- Node.js 
 - Git
+- Docker (optional)
 
 ## Installation and Running the app
 
