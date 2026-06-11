@@ -25,60 +25,76 @@ Displays users and products analytics from [DummyJSON](https://dummyjson.com).
 - Node.js 18+
 - Git
 
-## Installation
+## Installation and Running the app
 
 ### 1. Clone the repository
-\```bash
+
+```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-\```
-
-### 2. Backend
-\```bash
-cd backend
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
-
-pip install -r requirements.txt
-\```
+```
 
 Create a `.env` file inside `backend/`:
-\```
+```
 USERS_URL=https://dummyjson.com/users
 PRODUCTS_URL=https://dummyjson.com/products
-\```
-
-### 3. Frontend
-\```bash
-cd frontend
-npm install
-\```
+```
 
 Create a `.env` file inside `frontend/`:
-\```
+```
 VITE_API_BASE_URL=http://localhost:8000
-\```
+```
 
-## Running the app
+### 2. Docker (install and run the app)
+```bash
+docker-compose up --build
+```
+
+## OR
+
+### 3. Backend (install)
+
+```bash
+cd backend
+python -m venv venv
+```
+
+#### Windows
+```bash
+venv\Scripts\activate
+```
+#### Mac/Linux
+```bash
+source venv/bin/activate
+```
+
+then:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Frontend (install)
+```bash
+cd frontend
+npm install
+```
+
+#### Running the app
 
 Open **two terminals**:
 
 **Terminal 1 — Backend**
-\```bash
+```bash
 cd backend
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 uvicorn app.main:app --reload --port 8000
-\```
+```
 
 **Terminal 2 — Frontend**
-\```bash
+```bash
 cd frontend
 npm run dev
-\```
+```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
